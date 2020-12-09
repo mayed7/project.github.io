@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="./index.html">Home</a></li>
+  <li><a href="./aboutus.html">About us</a></li>
+  <li><a href="./nowshowing.html">Now Showing</a></li>
+  <li><a href="./trailer.html">Movie trailer</a></li>
+  <li><a href="./cont.html">Contact us</a></li>
+</ul>
+
+</body>
+</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1d49aa;
+  color: rgb(241, 219, 219);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(245, 236, 236);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<h2 style="text-align:center">Now Showing </h2>
+<div class="row">
+    <div class="column" style="
+    width: 261px;
+ ">
+        <div class="card" >
+      <img src="C:\Users\DELL\Pictures\first.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>The croods a new age</h2>
+        <p class="title">English <hr> Director:
+             Joel Crawford </p>
+        <p>Animation</p>
+        <p>Lead cast:                                
+            Emma Stone, Nicolas Cage,, Ryan Reynolds</p>
+            <p>Production year: 2020</p>
+        <p><button class="button">Book now</button></p>
+      </div>
+    </div>
+  </div>
+
+ 
+    <div class="column" style="
+    width: 261px;">
+    <div class="card">
+      <img src="C:\Users\DELL\Pictures\second.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2> Suraj Pe Mangal Bhari  </h2>
+        <p class="title">Hindi <hr> Director:
+            Abhishek Sharma</p>
+        <p>Comedy </p>
+        <p>Lead cast:
+            Diljit Dosanjh, Fatima Sana Shaikh, Manoj Bajpaye.</p>
+            <p>Production year: 2020</p>
+        <p><button class="button">Book now</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column" style="
+    width: 261px;
+       ">
+    <div class="card">
+      <img src="C:\Users\DELL\Pictures\third.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Freaky</h2>
+        <p><br> </p> 
+        <p class="title">English <hr> Director:
+            Christopher Landon </p>
+        <p>Comedy</p>
+        <p>Lead cast:                                
+            Alan Ruck, Kathryn Newton</p>
+            <p>Production year: 2020</p>
+        <p><button class="button">Book now</button></p>
+      </div>
+    </div>  
+  </div>
+
+ <div class="column" style="
+      width: 261px;
+      ">
+      <div class="card">
+        <img src="C:\Users\DELL\Pictures\fourth.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>The Call </h2>
+          <p><br> </p> 
+          <p class="title">English <hr> Director: Timothy Woodward Jr.</p>
+          <p>Horror</p>
+          <p>Lead cast:
+            Chester Rushing, Lin Shaye, Tobin Bell</p>
+          <p><button class="button">Book now</button></p>
+        </div>
+    </div>
+ </div>
+ <div class="column" style="
+ width: 261px;">
+ <div class="card">
+   <img src="C:\Users\DELL\Pictures\fifth.png" alt="Mike" style="width:100%">
+   <div class="container">
+     <h2>Baba Yaga: Terror of the Dark Forest</h2>
+     <p class="title">English <hr> Director: Svyatoslav Podgaevskiy</p>
+     <p>Horror</p>
+     <p>Lead cast:
+        Artyom Zhigulin, Glafira Golubeva,, Oleg Chugunov,</p>
+     <p><button class="button">Book now</button></p>
+   </div>
+ </div>
+</div>

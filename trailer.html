@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Movie Website</title>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+<style>
+    
+    #trailer .modal-dialog {
+        margin-top: 200px;
+        width: 640px;
+        height: 480px;
+    }
+    .hanging-close {
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        z-index: 9001;
+    }
+    #trailer-video {
+        width: 100%;
+        height: 100%;
+    }
+    .movie-tile {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .movie-tile:hover {
+        background-color: #3E8383;
+        cursor: pointer;
+        text: white;
+    }
+    .scale-media {
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .scale-media iframe {
+        border: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: black;
+    }
+
+</style>
+<style> 
+
+
+
+
+.title {
+color: grey;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+
+
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="./index.html">Home</a></li>
+  <li><a href="./aboutus.html">About us</a></li>
+  <li><a href="./nowshowing.html">Now Showing</a></li>
+  <li><a href="./trailer.html">Movie trailer</a></li>
+  <li><a href="./cont.html">Contact us</a></li>
+</ul>
+
+</body>
+</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1d49aa;
+  color: rgb(241, 219, 219);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(245, 236, 236);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+
+
+<body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Page Content -->
+
+    <div class="container"></div>
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="a80x06Wn91U" data-toggle="modal" data-target="#trailer">
+    <img src="http://www.hollywoodmoviejerseys.com/uploads/1/0/2/3/10237892/3921667.jpg" width="220" height="342">
+    <h2>Mystery, Alaska</h2>
+    <h5><b>Director: </b> Jay Roach </h5>
+    <h5><b>Category: </b> Drama/Sport </h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="VG5MtenlP-A" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/The_BFG_poster.jpg/220px-The_BFG_poster.jpg" width="220" height="342">
+    <h2>The BFG</h2>
+    <h5><b>Director: </b> Steven Spielberg </h5>
+    <h5><b>Category: </b> Fantasy </h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2gCbnwavkKc" data-toggle="modal" data-target="#trailer">
+    <img src="http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_UY1200_CR91,0,630,1200_AL_.jpg" width="220" height="342">
+    <h2>Star Wars</h2>
+    <h5><b>Director: </b> George Lucas </h5>
+    <h5><b>Category: </b> Science Fiction </h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="NTya9A4O9Ws" data-toggle="modal" data-target="#trailer">
+    <img src="http://wp.production.patheos.com/blogs/lookingcloser/files/2015/02/american-sniper-poster.jpg" width="220" height="342">
+    <h2>American Sniper</h2>
+    <h5><b>Director: </b> Clint Eastwood </h5>
+    <h5><b>Category: </b> Drama Film </h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="JzZh8kJJwe4" data-toggle="modal" data-target="#trailer">
+    <img src="http://www.impawards.com/2016/posters/now_you_see_me_two_ver17.jpg" width="220" height="342">
+    <h2>NOW YOU CAN SEE ME 2</h2>
+    <h5><b>Director: </b> Jon M. Chu </h5>
+    <h5><b>Category: </b> Thriller </h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="1UXWIVAIimU" data-toggle="modal" data-target="#trailer">
+    <img src="http://www.birthdaydirect.com/images/59902-the-secret-life-of-pets-tote-bag.jpg" width="220" height="342">
+    <h2>The Secret Life of Pets</h2>
+    <h5><b>Director: </b> Chris Renaud </h5>
+    <h5><b>Category: </b> Comedy </h5>
+</div>
+</div>
+ </body>
